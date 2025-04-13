@@ -2,9 +2,9 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/importdb
-    username: your_db_username
-    password: your_db_password
+    url: jdbc:postgresql://localhost:5441/csvimport
+    username: csvadmin
+    password: csvpassword
     driver-class-name: org.postgresql.Driver
 
   jpa:

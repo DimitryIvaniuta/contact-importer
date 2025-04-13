@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: contact-importer-postgres
+    restart: always
+    ports:
+      - "5441:5432"
+    environment:
+      POSTGRES_USER: csvadmin
+      POSTGRES_PASSWORD: csvpassword
+      POSTGRES_DB: csvimport
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
